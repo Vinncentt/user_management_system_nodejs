@@ -1,0 +1,29 @@
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col" class="text-end">Action</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {{#each databack}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.first_name}}</td>
+      <td>{{this.last_name}}</td>
+      <td>{{this.phone_number}}</td>
+      <td>{{this.email}}</td>
+      <td class="text-end">
+      <a href="#" type="button" class="btn btn-light bt-small"><i class="bi bi-eye">View</i></a>
+      <a href="#" type="button" class="btn btn-light bt-small"><i class="bi bi-pencil">Edit</i></a>
+      <a href="#" type="button" class="btn btn-light bt-small"><i class="bi bi-person-x">Delete</i></a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
